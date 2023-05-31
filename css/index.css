@@ -32,3 +32,36 @@ html {
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.4);
 }
+
+h1 {
+    text-align: center;
+}
+
+.social-media h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.social-media li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.social-media a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.social-media a:hover {
+    background-color: #555;
+}
