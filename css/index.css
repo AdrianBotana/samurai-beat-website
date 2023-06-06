@@ -3,32 +3,91 @@ html {
     height: 100%;
 }
 
-* {
-    box-sizing: border-box;
+@font-face {
+    font-family: kajifont;
+    src: url(/fonts/kajifont.ttf);
 }
 
 .bg-image {
     height: 100%;
-    filter: blur(4px);
+    filter: blur(2px);
     background-size: cover;
-    -webkit-filter: blur(4px);
+    -webkit-filter: blur(2px);
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("/images/ScreenShot1.png");
+}
+
+.presskit {
+    top: 20px;
+    left: 20px;
+    width: 115px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 3px solid #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.presskit p{
+    color: white;
+    font-size: 1rem;
+    padding-left: 10px;
+    font-family: kajifont;
+}
+
+.presskit svg{
+    width: 25px;
+    fill: white;
+    padding-left: 5px;
 }
 
 .bg-text {
     top: 50%;
     left: 50%;
     z-index: 2;
-    width: 80%;
+    width: 50vw;
     padding: 20px;
     color: white;
     font-weight: bold;
-    text-align: center;
     position: absolute;
+    text-align: center;
+    border-radius: 5px;
     border: 3px solid #f1f1f1;
-    background-color: rgb(0, 0, 0);
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-text h1 {
+    font-size: 2.5rem;
+    font-family: kajifont;
+}
+
+.bg-text p {
+    font-size: 1rem;
+    padding-bottom: 10px;
+    font-family: kajifont;
+}
+
+.social-icons {
+    padding: 0;
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.svg-color {
+    fill: white;
 }
